@@ -1,25 +1,40 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1433
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExample1", "ConsoleExample1\ConsoleExample1.csproj", "{986060A2-94A5-45A1-92E4-D0BF9DFC44E5}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{986060A2-94A5-45A1-92E4-D0BF9DFC44E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{986060A2-94A5-45A1-92E4-D0BF9DFC44E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{986060A2-94A5-45A1-92E4-D0BF9DFC44E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{986060A2-94A5-45A1-92E4-D0BF9DFC44E5}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {23781135-6B65-4E77-863A-7928674CB9A7}
-	EndGlobalSection
-EndGlobal
+/* 开发者 郭林
+ * 功能 加减法
+ * 时间 2020.3.15
+ */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleExample1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            sum = JiaFa(3, 5);
+            // Console.WriteLine("和为",sum);
+            // Myclass.JianFa(5,3);
+            Console.WriteLine(JiaFa(5,3));
+            Console.WriteLine(Myclass.JianFa(5, 3));
+        }
+        //加法方法
+        static int JiaFa(int a, int b)
+        {
+            return a + b;
+        }
+    }
+        class Myclass
+        {
+            //减法方法
+           public static int JianFa(int a, int b)
+            {
+                return a - b;
+            }
+        }
+    
+}
+
